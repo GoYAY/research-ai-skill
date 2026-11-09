@@ -1,5 +1,7 @@
 **完整产品设计报告：[阅读 PDF](docs/reports/research-ai-skill-product-design.pdf) · [下载 Word](docs/reports/research-ai-skill-product-design.docx)**
 
+**判断层迭代记录：[在线阅读](docs/reports/research-ai-skill-iteration.md) · [PDF](docs/reports/research-ai-skill-iteration.pdf) · [Word](docs/reports/research-ai-skill-iteration.docx)**
+
 # Research AI Skill
 
 让 AI 在影响科研目标的关键处及时提醒，在条件充分时继续把任务做完。
@@ -13,11 +15,11 @@ Research AI Skill 围绕这些问题，为 AI 助手提供目标识别、必要�
 | 功能 | 对当前任务的帮助 |
 | --- | --- |
 | 理解目标与当前步骤 | 区分你想支持的研究决定、这次要交付的产物，以及已经确认的条件 |
-| 发现关键依赖 | 根据已有资料，识别会改变研究设计、方法选择或后续解释的缺口 |
+| 发现关键依赖 | 识别会改变研究设计、方法或投入决定的缺口，考虑既有研究与现成方案的覆盖 |
 | 说明方案取舍 | 解释记录、资源和隐私选择各自保留哪些功能，由研究者决定重大取舍 |
 | 安排介入时机 | 在真实采集、资料删除或正式提交前确认必要条件，同时继续独立准备 |
 | 匹配结论与证据 | 让观察、关联、机制和因果表述与实际资料及设计相匹配 |
-| 条件充分时推进 | 完成简单任务或已确认方案，适时结束额外追问与扩展 |
+| 条件充分时推进 | 完成简单任务或已确认方案；提出可选补充时说明它服务的另一目标及与当前任务的区别 |
 
 ## 适合哪些场景？
 
@@ -56,7 +58,7 @@ Research AI Skill 围绕这些问题，为 AI 助手提供目标识别、必要�
 
 ## 当前版本与文件
 
-当前版本为 **2.4.1.1，受控试用**。需求来源、设计取舍、产品机制和验证过程见页首完整报告。
+当前版本为 **2.4.1.1，受控试用**，本次修订为 `judgment-goal-boundary-20261109`。需求来源、设计取舍、产品机制和验证过程见页首完整报告。
 
 | 文件或目录 | 内容 |
 | --- | --- |
@@ -64,6 +66,7 @@ Research AI Skill 围绕这些问题，为 AI 助手提供目标识别、必要�
 | [rules/](rules/) | 输入、证据、介入范围和时点规则 |
 | [references/](references/) | 科研协作能力及适用条件 |
 | [templates/](templates/) | 澄清、权衡和解释模板 |
-| [docs/reports/](docs/reports/) | 完整产品设计报告 PDF 与 Word |
+| [docs/reports/](docs/reports/) | 产品设计与本轮迭代报告 |
+| [docs/evaluation/2026-11-09-judgment/](docs/evaluation/2026-11-09-judgment/) | 判断层开发验证的题目、回答与评价 |
 
 欢迎通过 [Issues](https://github.com/GoYAY/research-ai-skill/issues) 反馈：你当时的目标、提供了哪些信息、AI 如何回应，以及哪一步需要改进。请移除个人材料与凭证后再提交。

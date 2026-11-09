@@ -1,0 +1,901 @@
+{
+  "kind": "manual_semantic_assessment",
+  "rubric": "预先冻结四项标准；对照全文均经人工阅读，不按词频判分。",
+  "condition_note": "控制组为505字候选；更新组加入结尾段并更新入口过期状态说明。",
+  "summary": {
+    "control_complete": 0,
+    "updated_complete": 5,
+    "current_answer_control": 5,
+    "current_answer_updated": 5,
+    "formatting": "仅完成三行两列表格，0次联网"
+  },
+  "cases": {
+    "control_01": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "partial",
+      "optional_scope": "partial",
+      "complete": false,
+      "manual_read": true,
+      "reason": "当前可行性已回答；后续稳定性又被表述为判断是否保留规则的必要条件，未明确目标变更与可选性。",
+      "evidence": {
+        "line": 11,
+        "quote": "2. **验证判断条件的稳定性与作用来源。** 在模型、工具和任务保持一致的情况下，重复比较两版，并加入不同措辞、不同领域的任务；再拆分判断条件做消融，识别究竟是哪项修改促成了主动发现。这样才能判断它是否值得保留为通用规则。"
+      },
+      "raw_answer_sha256": "b7c3e15129692241bf84c524b7cb2ca6ada93193dffce6b483e09c423016c8b3",
+      "raw_events_sha256": "169a046b6a2791b4cad6494ee4a39e395efe118185746828383357ff87fec927",
+      "web_actions": 0
+    },
+    "control_02": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "partial",
+      "optional_scope": "partial",
+      "complete": false,
+      "manual_read": true,
+      "reason": "给出当前答案和后续研究，但结尾转向新的下一轮目标，没有说明由用户选择是否纳入。",
+      "evidence": {
+        "line": 16,
+        "quote": "下一轮最有价值的目标是：**让 Agent 在发现已有方案后，依据覆盖证据恰当地推进当前决定。**"
+      },
+      "raw_answer_sha256": "f44f5615e0bc0f5f8b21dab6ec8b75e7307170da66763868da1f1d71137bcf12",
+      "raw_events_sha256": "3072dad35d63fe38fb886aae690ed708046f9740c2a121fc8263fc292ea60689",
+      "web_actions": 0
+    },
+    "control_03": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "partial",
+      "optional_scope": "partial",
+      "complete": false,
+      "manual_read": true,
+      "reason": "当前结论正确，但直接给出应推进的后续工作，未明确补充与当前验收的区分。",
+      "evidence": {
+        "line": 1,
+        "quote": "**可以。当前测试支持：在保留原有检索能力、不增加检索工作流的情况下，仅修改判断条件，就能触发 Agent 主动发现已有方案并提醒用户。** 这条路线值得继续，下一步应优先完善判断条件。"
+      },
+      "raw_answer_sha256": "be8f478a9b1e68c9e1b35579db55b01b6b3f5e6bcfd51c5ea816b3063c55c847",
+      "raw_events_sha256": "d689f582e5abdd3412b2a946a3be723d861bbaa8a91df19ce9174ce48cbb300d",
+      "web_actions": 0
+    },
+    "control_04": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "partial",
+      "optional_scope": "partial",
+      "complete": false,
+      "manual_read": true,
+      "reason": "当前可行性与后续补完整的目标没有明确分开，补充继续以应当实施表达。",
+      "evidence": {
+        "line": 5,
+        "quote": "**候选版值得继续研究，但还需修正“发现之后如何判断”。** 产品题已经完成发现和提醒，却在覆盖范围与差异尚未核实时建议定方向。下一步应把判断条件补完整：已有方案可能影响选型时主动查证；差异仍未知时，先报告已知覆盖和待核实项，把方向建议写成条件路径，待关键差异明确后再收敛。"
+      },
+      "raw_answer_sha256": "2ef81bd241a8b1a4dd1938a3bd925346db818eac73357ecf0052d37d81211d10",
+      "raw_events_sha256": "7e0a51cf81da1c930c414f85a271b4d06a08991939cb72a601f780c8bac8661b",
+      "web_actions": 0
+    },
+    "control_05": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "partial",
+      "optional_scope": "partial",
+      "complete": false,
+      "manual_read": true,
+      "reason": "承认最低目标已有实例，仍未明确后续工作是独立可选目标。",
+      "evidence": {
+        "line": 5,
+        "quote": "同时，产品题暴露了一个具体缺口：**候选版发现了已有覆盖，却在差异尚未核实时仍建议定方向。** 因而，本轮“主动发现并提醒”的目标已出现成功实例，下一步值得研究的是如何让发现结果实际约束后续建议：差异待核实时，可以提出候选方向和比较步骤，将定方向保留到关键差异得到确认之后。"
+      },
+      "raw_answer_sha256": "092219ceda2f8f7474f4638bc4e612c3ab475d883c7df041df51a278abbac977",
+      "raw_events_sha256": "6ac70434b9abdb64a77091190ad45ccde0e9c132be8e62afa22c0e807f44e52a",
+      "web_actions": 0
+    },
+    "updated_01": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "present",
+      "optional_scope": "present",
+      "complete": true,
+      "manual_read": true,
+      "reason": "明确后续分别回答决策质量、稳定性与适用范围，当前问题已有肯定观察。",
+      "evidence": {
+        "line": 13,
+        "quote": "这些方向分别回答决策质量、稳定性和适用范围，属于后续扩展；当前关于“仅改判断条件能否触发主动发现与提醒”的可行性问题，已有肯定观察。"
+      },
+      "raw_answer_sha256": "5f803a4ce95aa4fc905cad14e48979cba334379839b6169709eb8b045bd97d26",
+      "raw_events_sha256": "f4402d6eaca3272fcdaeb65685454fbba8ee6b9c814298204c668599cb557095",
+      "web_actions": 0
+    },
+    "updated_02": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "present",
+      "optional_scope": "present",
+      "complete": true,
+      "manual_read": true,
+      "reason": "说明当前问题已经肯定回答，并将后续三个问题列为独立目标。",
+      "evidence": {
+        "line": 13,
+        "quote": "当前问题已经可以作出肯定判断；上述方向分别研究决策衔接、稳定性和适用边界，可作为独立的后续目标。"
+      },
+      "raw_answer_sha256": "0e56c298c796849dea5b29e06cb819bb5c19e2519f8d24dfc30d7fc41536fc01",
+      "raw_events_sha256": "7fac31be5cb415d75d0f5ce320f3b849855c8d7926f831f0e8b1f400f01f8f28",
+      "web_actions": 0
+    },
+    "updated_03": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "present",
+      "optional_scope": "present",
+      "complete": true,
+      "manual_read": true,
+      "reason": "说明补充的三个目标，同时明确当前判断已完成。",
+      "evidence": {
+        "line": 19,
+        "quote": "这些是进一步研究稳定性、决策质量和作用机制的补充目标；**当前关于“仅改判断条件能否触发主动发现与提醒”的判断已经完成。**"
+      },
+      "raw_answer_sha256": "f87f6b5b4ce6238437b861b74f19ca4b5c602efdfb244cb6af361694068015c7",
+      "raw_events_sha256": "ce6e96e88962029a19e8923fa1f94465b753776c493f8bead57c1bab9723b5c9",
+      "web_actions": 0
+    },
+    "updated_04": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "present",
+      "optional_scope": "present",
+      "complete": true,
+      "manual_read": true,
+      "reason": "在列后续研究前明确它们处于当前可行性判断之外。",
+      "evidence": {
+        "line": 11,
+        "quote": "我认为有价值的后续研究有三个，均属于当前可行性判断之外的补充目标："
+      },
+      "raw_answer_sha256": "512de70d6c6271641677be7fcb0d086b744b31862abbbb9a6aa5a36c9ea38245",
+      "raw_events_sha256": "da944768fc476b73b17e1104245d7554a5448916c43d5fb3f51cf6781f6d6f16",
+      "web_actions": 0
+    },
+    "updated_05": {
+      "current_answer": "present",
+      "further_question_named": "present",
+      "goal_distinction": "present",
+      "optional_scope": "present",
+      "complete": true,
+      "manual_read": true,
+      "reason": "明确后续为可选研究，不影响当前已有结论。",
+      "evidence": {
+        "line": 11,
+        "quote": "这些是进一步了解稳定性和改进决策质量的可选研究，不影响当前结论：**仅修改判断条件，已在本轮实现了主动发现已有方案并提醒用户。**"
+      },
+      "raw_answer_sha256": "4c4e303ce9a421c2b3c793f33b57775fb71eb426ccc2fac87cf798c6c1db3ca5",
+      "raw_events_sha256": "d7235f7c75698d21144ce8395a6325cc8d84b9fccf63213684b216b155efbfe8",
+      "web_actions": 0
+    },
+    "formatting_updated": {
+      "current_task": "present",
+      "extra_discovery": "absent",
+      "web_actions": 0,
+      "manual_read": true,
+      "raw_answer_sha256": "b955944013ce1fac8e524922453b2b06fee526abaf5da99a35142e2784c62002",
+      "raw_events_sha256": "4ac56032848f6a0f2a9ef12af86b5519d1da2b62c5c3c4f4310d38948b32ba1b"
+    }
+  },
+  "verification": {
+    "passed": 178,
+    "failed": 0,
+    "checks": [
+      {
+        "check": "control_01:completed",
+        "passed": true
+      },
+      {
+        "check": "control_01:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "control_01:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "control_01:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "control_01:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "control_01:entry_read",
+        "passed": true
+      },
+      {
+        "check": "control_01:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "control_02:completed",
+        "passed": true
+      },
+      {
+        "check": "control_02:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "control_02:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "control_02:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "control_02:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "control_02:entry_read",
+        "passed": true
+      },
+      {
+        "check": "control_02:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "control_03:completed",
+        "passed": true
+      },
+      {
+        "check": "control_03:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "control_03:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "control_03:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "control_03:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "control_03:entry_read",
+        "passed": true
+      },
+      {
+        "check": "control_03:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "control_04:completed",
+        "passed": true
+      },
+      {
+        "check": "control_04:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "control_04:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "control_04:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "control_04:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "control_04:entry_read",
+        "passed": true
+      },
+      {
+        "check": "control_04:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "control_05:completed",
+        "passed": true
+      },
+      {
+        "check": "control_05:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "control_05:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "control_05:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "control_05:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "control_05:entry_read",
+        "passed": true
+      },
+      {
+        "check": "control_05:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "updated_01:completed",
+        "passed": true
+      },
+      {
+        "check": "updated_01:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "updated_01:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "updated_01:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "updated_01:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "updated_01:entry_read",
+        "passed": true
+      },
+      {
+        "check": "updated_01:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "updated_02:completed",
+        "passed": true
+      },
+      {
+        "check": "updated_02:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "updated_02:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "updated_02:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "updated_02:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "updated_02:entry_read",
+        "passed": true
+      },
+      {
+        "check": "updated_02:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "updated_03:completed",
+        "passed": true
+      },
+      {
+        "check": "updated_03:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "updated_03:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "updated_03:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "updated_03:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "updated_03:entry_read",
+        "passed": true
+      },
+      {
+        "check": "updated_03:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "updated_04:completed",
+        "passed": true
+      },
+      {
+        "check": "updated_04:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "updated_04:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "updated_04:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "updated_04:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "updated_04:entry_read",
+        "passed": true
+      },
+      {
+        "check": "updated_04:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "updated_05:completed",
+        "passed": true
+      },
+      {
+        "check": "updated_05:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "updated_05:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "updated_05:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "updated_05:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "updated_05:entry_read",
+        "passed": true
+      },
+      {
+        "check": "updated_05:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:completed",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:task_unchanged",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:receipt_answer.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:receipt_events.jsonl",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:receipt_stderr.log",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:entry_hash",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_rules\\decision_impact.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_rules\\expansion_budget.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_rules\\input_completeness.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_rules\\risk_gate.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_references\\research_capabilities.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_templates\\clarification.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_templates\\interpretation.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:support_templates\\tradeoff.md",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:entry_read",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:rubric_before_run",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:zero_web",
+        "passed": true
+      },
+      {
+        "check": "formatting_updated:three_rows",
+        "passed": true
+      }
+    ]
+  },
+  "scope": "同一固定题目，每条件5次独立调用；另有1次整理检查；不据此继续追加条件。"
+}
